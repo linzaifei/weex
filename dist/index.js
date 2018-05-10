@@ -62,26 +62,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 29);
+/******/ 	return __webpack_require__(__webpack_require__.s = 58);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 29:
+/***/ 58:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(30)
+__vue_styles__.push(__webpack_require__(59)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(31)
+__vue_exports__ = __webpack_require__(60)
 
 /* template */
-var __vue_template__ = __webpack_require__(33)
+var __vue_template__ = __webpack_require__(62)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -114,12 +114,17 @@ new Vue(module.exports)
 
 /***/ }),
 
-/***/ 30:
+/***/ 59:
 /***/ (function(module, exports) {
 
 module.exports = {
   "container": {
     "backgroundColor": "#f2f2f2"
+  },
+  "img": {
+    "width": "35",
+    "height": "35",
+    "marginRight": "15"
   },
   "list": {
     "marginTop": "10"
@@ -131,15 +136,20 @@ module.exports = {
     "paddingLeft": "20",
     "fontSize": "35",
     "color": "#333333",
+    "flex": 1
+  },
+  "item": {
+    "flexDirection": "row",
+    "backgroundColor": "#ffffff",
+    "alignItems": "center",
     "borderBottomWidth": "1",
-    "borderColor": "#eeeeee",
-    "backgroundColor": "#ffffff"
+    "borderColor": "#eeeeee"
   }
 }
 
 /***/ }),
 
-/***/ 31:
+/***/ 60:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -149,13 +159,16 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _ZFPush = __webpack_require__(32);
+var _ZFPush = __webpack_require__(61);
 
 var _ZFPush2 = _interopRequireDefault(_ZFPush);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var navigator = weex.requireModule('navigator'); //
+//
+//
+//
 //
 //
 //
@@ -174,6 +187,7 @@ exports.default = {
     components: {},
     data: function data() {
         return {
+            imgBack: "",
             list: [{
                 title: 'ZfRate',
                 value: 'zf-rate'
@@ -186,16 +200,18 @@ exports.default = {
             }, {
                 title: 'ZfAlert',
                 value: 'zf-alert'
+            }, {
+                title: 'ZfSheet',
+                value: 'zf-sheet'
+            }, {
+                title: 'ZfTime',
+                value: 'zf-time'
             }]
         };
     },
 
     methods: {
         clickItem: function clickItem(value) {
-            //            modal.toast({
-            //                message:push.baseUrl()+'examples/'+`${value}`+'/index.js'
-            //            })
-
             navigator.push({
                 url: _ZFPush2.default.createURL(_ZFPush2.default.baseUrl() + 'examples/' + ('' + value) + '/index.js'),
                 animated: 'true'
@@ -207,7 +223,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 32:
+/***/ 61:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -231,7 +247,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 33:
+/***/ 62:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -262,6 +278,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         }]
       }
     }
+  }, [_c('div', {
+    staticClass: ["item"]
   }, [_c('text', {
     staticClass: ["cell"],
     attrs: {
@@ -269,7 +287,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "@binding": "item.title"
       }
     }
-  })])], 1)], 1)
+  }), _c('image', {
+    staticClass: ["img"],
+    attrs: {
+      "resize": "contain",
+      "src": "http://chuantu.biz/t6/281/1523501493x-1404793106.png"
+    }
+  })])])], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

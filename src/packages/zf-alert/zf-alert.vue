@@ -12,8 +12,8 @@
                 <text class="alert_content" v-if="content">{{content}}</text>
             </div>
             <div class="btn">
-                <text @click="clickItem(0)" class="left tag" v-if="cancelTitle">{{cancelTitle}}</text>
-                <text @click="clickItem(1)" class="right tag" v-if="okTitle">{{okTitle}}</text>
+                <text @click="clickItem(0)" :style="{color:cancelColor}" class="left tag" v-if="cancelTitle">{{cancelTitle}}</text>
+                <text @click="clickItem(1)" :style="{color:okColor}" class="right tag" v-if="okTitle">{{okTitle}}</text>
             </div>
         </div>
 
@@ -21,7 +21,6 @@
 </template>
 
 <script>
-    import ZfMask from '../zf-mask'
     const animation = weex.requireModule('animation');
 
     const modal =weex.requireModule('modal')
@@ -29,11 +28,13 @@
     export default {
         props:{
             show:{default:false},
-            title:{default:'标题'},
-            content:{default:'内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容'},
+            title:{default:''},
+            content:{default:''},
             okTitle:{default:'确认'},
-            cancelTitle:{default:'取消'},
-            opacity:{default:0.1}
+            cancelTitle:{default:''},
+            opacity:{default:0.1},
+            okColor:{default:'#fc8157'},
+            cancelColor:{default:'#666'},
         },
         data() {
             return {
@@ -64,7 +65,7 @@
 
         },
         components: {
-            ZfMask,
+
         },
         methods: {
             apperAlert(bool,duration = 300) {
@@ -136,14 +137,12 @@
     .left{
         flex: 1;
         text-align: center;
-        color: #666;
         border-color: #ddd;
         border-right-width: 1px;
     }
     .right{
         flex:1;
         text-align: center;
-        color: #fc8157;
     }
 
     .tag{

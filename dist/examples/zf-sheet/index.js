@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 38);
+/******/ 	return __webpack_require__(__webpack_require__.s = 50);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1730,21 +1730,33 @@ module.exports = __vue_exports__
 /* 35 */,
 /* 36 */,
 /* 37 */,
-/* 38 */
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(39)
+__vue_styles__.push(__webpack_require__(51)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(40)
+__vue_exports__ = __webpack_require__(52)
 
 /* template */
-var __vue_template__ = __webpack_require__(41)
+var __vue_template__ = __webpack_require__(53)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -1756,10 +1768,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/linzaifei/Desktop/linzaifei/Weex/project/zf_components/src/examples/zf-mask/index.vue"
+__vue_options__.__file = "/Users/linzaifei/Desktop/linzaifei/Weex/project/zf_components/src/examples/zf-sheet/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-87019010"
+__vue_options__._scopeId = "data-v-f943122e"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -1776,23 +1788,38 @@ new Vue(module.exports)
 
 
 /***/ }),
-/* 39 */
+/* 51 */
 /***/ (function(module, exports) {
 
 module.exports = {
+  "container": {
+    "backgroundColor": "#ffffff"
+  },
   "item": {
     "justifyContent": "center",
     "alignItems": "center",
-    "marginTop": "100"
+    "marginTop": "20",
+    "marginRight": "20",
+    "marginBottom": "20",
+    "marginLeft": "20"
   },
   "center": {
     "color": "#333333",
     "fontSize": "35"
+  },
+  "title": {
+    "fontSize": "30",
+    "color": "#666666",
+    "backgroundColor": "#f2f2f2",
+    "paddingTop": "15",
+    "paddingRight": "15",
+    "paddingBottom": "15",
+    "paddingLeft": "15"
   }
 }
 
 /***/ }),
-/* 40 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1804,61 +1831,189 @@ Object.defineProperty(exports, "__esModule", {
 
 var _index = __webpack_require__(19);
 
+var modal = weex.requireModule('modal'); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
 exports.default = {
     data: function data() {
         return {
-            show: false
+            show: false,
+            show1: false,
+            show2: false,
+            actions: ['打开相册', '打开相机'],
+            actions1: ['样式一', '样式二', '样式三']
+
         };
     },
     created: function created() {},
 
     components: {
-        ZfMask: _index.ZfMask
+        ZfSheet: _index.ZfSheet
     },
     methods: {
-        zfMaskClicked: function zfMaskClicked() {
-            this.show = false;
+        clickItem: function clickItem(e) {
+            switch (e) {
+                case 0:
+                    this.show = true;
+                    break;
+                case 1:
+                    this.show1 = true;
+                    break;
+                case 2:
+                    this.show2 = true;
+                    break;
+            }
         },
-        clickItem: function clickItem() {
-            this.show = true;
+        clickCancel: function clickCancel() {
+            if (this.show) {
+                this.show = false;
+            }
+            if (this.show1) {
+                this.show1 = false;
+            }
+            if (this.show2) {
+                this.show2 = false;
+            }
+        },
+        clickSheetItem: function clickSheetItem(e) {
+            if (this.show) {
+                this.show = false;
+            }
+            if (this.show1) {
+                this.show1 = false;
+            }
+            if (this.show2) {
+                this.show2 = false;
+            }
+            modal.toast({
+                message: e.value
+            });
         }
     }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
-/* 41 */
+/* 53 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["container"]
-  }, [_c('div', {
+  }, [_c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("样式一(默认样式)")]), _c('div', {
     staticClass: ["item"]
   }, [_c('text', {
     staticClass: ["center"],
     on: {
-      "click": _vm.clickItem
+      "click": function($event) {
+        _vm.clickItem(0)
+      }
     }
-  }, [_vm._v("点击弹出mask")])]), _c('zf-mask', {
+  }, [_vm._v("点击弹出")])]), _c('zf-sheet', {
     attrs: {
-      "show": _vm.show
+      "show": _vm.show,
+      "actions": _vm.actions,
+      "actionCancelTitle": "取消",
+      "actionTitle": "选择方式"
     },
     on: {
-      "zfMaskClicked": _vm.zfMaskClicked
+      "clickItem": _vm.clickSheetItem,
+      "clickCancel": _vm.clickCancel
+    }
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("样式二")]), _c('div', {
+    staticClass: ["item"]
+  }, [_c('text', {
+    staticClass: ["center"],
+    on: {
+      "click": function($event) {
+        _vm.clickItem(1)
+      }
+    }
+  }, [_vm._v("点击弹出样式二")])]), _c('zf-sheet', {
+    attrs: {
+      "show": _vm.show1,
+      "actions": _vm.actions1,
+      "actionCancelTitle": "取消"
+    },
+    on: {
+      "clickItem": _vm.clickSheetItem,
+      "clickCancel": _vm.clickCancel
+    }
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("样式三")]), _c('div', {
+    staticClass: ["item"]
+  }, [_c('text', {
+    staticClass: ["center"],
+    on: {
+      "click": function($event) {
+        _vm.clickItem(2)
+      }
+    }
+  }, [_vm._v("点击弹出样式三")])]), _c('zf-sheet', {
+    attrs: {
+      "show": _vm.show2,
+      "canClickMask": "true",
+      "actions": _vm.actions1
+    },
+    on: {
+      "clickItem": _vm.clickSheetItem,
+      "clickCancel": _vm.clickCancel
     }
   })], 1)
 },staticRenderFns: []}

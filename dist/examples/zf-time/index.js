@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 38);
+/******/ 	return __webpack_require__(__webpack_require__.s = 54);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1730,21 +1730,37 @@ module.exports = __vue_exports__
 /* 35 */,
 /* 36 */,
 /* 37 */,
-/* 38 */
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(39)
+__vue_styles__.push(__webpack_require__(55)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(40)
+__vue_exports__ = __webpack_require__(56)
 
 /* template */
-var __vue_template__ = __webpack_require__(41)
+var __vue_template__ = __webpack_require__(57)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -1756,10 +1772,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/linzaifei/Desktop/linzaifei/Weex/project/zf_components/src/examples/zf-mask/index.vue"
+__vue_options__.__file = "/Users/linzaifei/Desktop/linzaifei/Weex/project/zf_components/src/examples/zf-time/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-87019010"
+__vue_options__._scopeId = "data-v-9bbc42ce"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -1776,23 +1792,24 @@ new Vue(module.exports)
 
 
 /***/ }),
-/* 39 */
+/* 55 */
 /***/ (function(module, exports) {
 
 module.exports = {
-  "item": {
-    "justifyContent": "center",
-    "alignItems": "center",
-    "marginTop": "100"
+  "container": {
+    "backgroundColor": "#f2f2f2"
   },
-  "center": {
-    "color": "#333333",
-    "fontSize": "35"
+  "title": {
+    "paddingTop": "20",
+    "paddingRight": "20",
+    "paddingBottom": "20",
+    "paddingLeft": "20",
+    "color": "#666666"
   }
 }
 
 /***/ }),
-/* 40 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1806,23 +1823,14 @@ var _index = __webpack_require__(19);
 
 exports.default = {
     data: function data() {
-        return {
-            show: false
-        };
+        return {};
     },
     created: function created() {},
 
     components: {
-        ZfMask: _index.ZfMask
+        ZfTime: _index.ZfTime
     },
-    methods: {
-        zfMaskClicked: function zfMaskClicked() {
-            this.show = false;
-        },
-        clickItem: function clickItem() {
-            this.show = true;
-        }
-    }
+    methods: {}
 }; //
 //
 //
@@ -1838,27 +1846,197 @@ exports.default = {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
-/* 41 */
+/* 57 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["container"]
-  }, [_c('div', {
-    staticClass: ["item"]
   }, [_c('text', {
-    staticClass: ["center"],
-    on: {
-      "click": _vm.clickItem
-    }
-  }, [_vm._v("点击弹出mask")])]), _c('zf-mask', {
-    attrs: {
-      "show": _vm.show
+    staticClass: ["title"]
+  }, [_vm._v("样式一")]), _c('zf-time', {
+    style: {
+      marginTop: '10px',
+      justifyContent: 'center'
     },
-    on: {
-      "zfMaskClicked": _vm.zfMaskClicked
+    attrs: {
+      "tpl": "{d}天{h}:{m}:{s}",
+      "timeBoxStyle": {
+        height: '50px',
+        width: '50px',
+        borderColor: '#B3B3B3',
+        borderWidth: '1px',
+        overflow: 'hidden'
+      },
+      "timeTextStyle": {
+        fontSize: '24px',
+        color: '#000'
+      },
+      "dotTextStyle": {
+        color: '#000',
+        fontSize: '24px'
+      },
+      "dotBoxStyle": {
+        width: '30px'
+      }
+    }
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("各种样式")]), _c('zf-time', {
+    style: {
+      marginTop: '10px',
+      justifyContent: 'center'
+    },
+    attrs: {
+      "tpl": "{h}:{m}:{s}",
+      "timeBoxStyle": {
+        height: '50px',
+        backgroundColor: 'orange',
+        width: '50px',
+        borderColor: '#B3B3B3',
+        borderWidth: '1px',
+        overflow: 'hidden'
+      },
+      "timeTextStyle": {
+        fontSize: '24px',
+        color: '#000'
+      },
+      "dotTextStyle": {
+        color: '#000',
+        fontSize: '24px'
+      },
+      "dotBoxStyle": {
+        width: '30px'
+      },
+      "countVal": "1525918833000"
+    }
+  }), _c('zf-time', {
+    style: {
+      marginTop: '10px',
+      justifyContent: 'center'
+    },
+    attrs: {
+      "tpl": "{h}时{m}分{s}秒",
+      "timeBoxStyle": {
+        height: '50px',
+        backgroundColor: 'orange',
+        width: '50px',
+        borderColor: '#B3B3B3',
+        borderWidth: '1px',
+        overflow: 'hidden'
+      },
+      "timeTextStyle": {
+        fontSize: '24px',
+        color: '#000'
+      },
+      "dotTextStyle": {
+        color: '#000',
+        fontSize: '24px'
+      },
+      "dotBoxStyle": {
+        width: '30px'
+      },
+      "countVal": "1525919151000"
+    }
+  }), _c('zf-time', {
+    style: {
+      marginTop: '10px',
+      justifyContent: 'center'
+    },
+    attrs: {
+      "tpl": "{m}分{s}秒",
+      "timeBoxStyle": {
+        height: '50px',
+        backgroundColor: 'orange',
+        width: '50px',
+        borderColor: '#B3B3B3',
+        borderWidth: '1px',
+        overflow: 'hidden'
+      },
+      "timeTextStyle": {
+        fontSize: '24px',
+        color: '#000'
+      },
+      "dotTextStyle": {
+        color: '#000',
+        fontSize: '24px'
+      },
+      "dotBoxStyle": {
+        width: '30px'
+      },
+      "countVal": "1525919181000"
+    }
+  }), _c('zf-time', {
+    style: {
+      marginTop: '10px',
+      justifyContent: 'center'
+    },
+    attrs: {
+      "tpl": "{m}:{s}秒",
+      "timeBoxStyle": {
+        height: '50px',
+        backgroundColor: 'orange',
+        width: '50px',
+        borderColor: '#B3B3B3',
+        borderWidth: '1px',
+        overflow: 'hidden'
+      },
+      "timeTextStyle": {
+        fontSize: '24px',
+        color: '#000'
+      },
+      "dotTextStyle": {
+        color: '#000',
+        fontSize: '24px'
+      },
+      "dotBoxStyle": {
+        width: '30px'
+      },
+      "countVal": "1525918833000"
     }
   })], 1)
 },staticRenderFns: []}
