@@ -43,6 +43,15 @@ export default {
         },{
             title:'ZfTime',
             value:'zf-time'
+        },{
+            title:'ZfTag',
+            value:'zf-tag'
+        },{
+            title:'ZfItem',
+            value:'zf-item'
+        },{
+            title:'ZfNavigator',
+            value:'zf-navigator'
         },]
     }
   },

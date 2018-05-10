@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 73);
+/******/ 	return __webpack_require__(__webpack_require__.s = 61);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2484,33 +2484,21 @@ module.exports = __vue_exports__
 /* 58 */,
 /* 59 */,
 /* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(74)
+__vue_styles__.push(__webpack_require__(62)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(75)
+__vue_exports__ = __webpack_require__(63)
 
 /* template */
-var __vue_template__ = __webpack_require__(76)
+var __vue_template__ = __webpack_require__(64)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -2522,10 +2510,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/linzaifei/Desktop/linzaifei/Weex/project/zf_components/src/examples/zf-sheet/index.vue"
+__vue_options__.__file = "/Users/linzaifei/Desktop/linzaifei/Weex/project/zf_components/src/examples/zf-navigator/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-f943122e"
+__vue_options__._scopeId = "data-v-d693833e"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -2542,38 +2530,23 @@ new Vue(module.exports)
 
 
 /***/ }),
-/* 74 */
+/* 62 */
 /***/ (function(module, exports) {
 
 module.exports = {
-  "container": {
-    "backgroundColor": "#ffffff"
-  },
-  "item": {
-    "justifyContent": "center",
-    "alignItems": "center",
-    "marginTop": "20",
-    "marginRight": "20",
-    "marginBottom": "20",
-    "marginLeft": "20"
-  },
-  "center": {
-    "color": "#333333",
-    "fontSize": "35"
-  },
   "title": {
     "fontSize": "30",
     "color": "#666666",
-    "backgroundColor": "#f2f2f2",
     "paddingTop": "15",
     "paddingRight": "15",
     "paddingBottom": "15",
-    "paddingLeft": "15"
+    "paddingLeft": "15",
+    "marginTop": "10"
   }
 }
 
 /***/ }),
-/* 75 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2618,88 +2591,30 @@ var modal = weex.requireModule('modal'); //
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 exports.default = {
     data: function data() {
         return {
-            show: false,
-            show1: false,
-            show2: false,
-            actions: ['打开相册', '打开相机'],
-            actions1: ['样式一', '样式二', '样式三']
-
+            submitImg: "http://chuantu.biz/t6/287/1523861847x-1566638291.png"
         };
     },
     created: function created() {},
 
     components: {
-        ZfSheet: _index.ZfSheet
+        ZfNavigator: _index.ZfNavigator
     },
     methods: {
-        clickItem: function clickItem(e) {
-            switch (e) {
-                case 0:
-                    this.show = true;
-                    break;
-                case 1:
-                    this.show1 = true;
-                    break;
-                case 2:
-                    this.show2 = true;
-                    break;
-            }
-        },
-        clickCancel: function clickCancel() {
-            if (this.show) {
-                this.show = false;
-            }
-            if (this.show1) {
-                this.show1 = false;
-            }
-            if (this.show2) {
-                this.show2 = false;
-            }
-        },
-        clickSheetItem: function clickSheetItem(e) {
-            if (this.show) {
-                this.show = false;
-            }
-            if (this.show1) {
-                this.show1 = false;
-            }
-            if (this.show2) {
-                this.show2 = false;
-            }
+        rightButtonClicked: function rightButtonClicked() {
             modal.toast({
-                message: e.value
+                message: '提交'
             });
         }
     }
 };
 
 /***/ }),
-/* 76 */
+/* 64 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -2707,67 +2622,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["container"]
   }, [_c('text', {
     staticClass: ["title"]
-  }, [_vm._v("样式一(默认样式)")]), _c('div', {
-    staticClass: ["item"]
-  }, [_c('text', {
-    staticClass: ["center"],
-    on: {
-      "click": function($event) {
-        _vm.clickItem(0)
-      }
-    }
-  }, [_vm._v("点击弹出")])]), _c('zf-sheet', {
+  }, [_vm._v("样式一")]), _c('zf-navigator', {
     attrs: {
-      "show": _vm.show,
-      "actions": _vm.actions,
-      "actionCancelTitle": "取消",
-      "actionTitle": "选择方式"
-    },
-    on: {
-      "clickItem": _vm.clickSheetItem,
-      "clickCancel": _vm.clickCancel
+      "leftTitle": "返回"
     }
   }), _c('text', {
     staticClass: ["title"]
-  }, [_vm._v("样式二")]), _c('div', {
-    staticClass: ["item"]
-  }, [_c('text', {
-    staticClass: ["center"],
-    on: {
-      "click": function($event) {
-        _vm.clickItem(1)
-      }
-    }
-  }, [_vm._v("点击弹出样式二")])]), _c('zf-sheet', {
+  }, [_vm._v("样式二")]), _c('zf-navigator', {
     attrs: {
-      "show": _vm.show1,
-      "actions": _vm.actions1,
-      "actionCancelTitle": "取消"
-    },
-    on: {
-      "clickItem": _vm.clickSheetItem,
-      "clickCancel": _vm.clickCancel
+      "leftTitle": "返回",
+      "centerTitle": "这是标题二",
+      "bgColor": "#fc8157"
     }
   }), _c('text', {
     staticClass: ["title"]
-  }, [_vm._v("样式三")]), _c('div', {
-    staticClass: ["item"]
-  }, [_c('text', {
-    staticClass: ["center"],
-    on: {
-      "click": function($event) {
-        _vm.clickItem(2)
-      }
-    }
-  }, [_vm._v("点击弹出样式三")])]), _c('zf-sheet', {
+  }, [_vm._v("样式三")]), _c('zf-navigator', {
     attrs: {
-      "show": _vm.show2,
-      "canClickMask": "true",
-      "actions": _vm.actions1
+      "leftTitle": "返回",
+      "centerTitle": "这是标题二",
+      "rightTitle": "提交",
+      "rightColor": "#E55455",
+      "rightImg": _vm.submitImg
     },
     on: {
-      "clickItem": _vm.clickSheetItem,
-      "clickCancel": _vm.clickCancel
+      "rightButtonClicked": _vm.rightButtonClicked
     }
   })], 1)
 },staticRenderFns: []}

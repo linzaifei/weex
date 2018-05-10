@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 73);
+/******/ 	return __webpack_require__(__webpack_require__.s = 77);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2496,21 +2496,25 @@ module.exports = __vue_exports__
 /* 70 */,
 /* 71 */,
 /* 72 */,
-/* 73 */
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(74)
+__vue_styles__.push(__webpack_require__(78)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(75)
+__vue_exports__ = __webpack_require__(79)
 
 /* template */
-var __vue_template__ = __webpack_require__(76)
+var __vue_template__ = __webpack_require__(80)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -2522,10 +2526,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/linzaifei/Desktop/linzaifei/Weex/project/zf_components/src/examples/zf-sheet/index.vue"
+__vue_options__.__file = "/Users/linzaifei/Desktop/linzaifei/Weex/project/zf_components/src/examples/zf-tag/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-f943122e"
+__vue_options__._scopeId = "data-v-d41de9b8"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -2542,38 +2546,30 @@ new Vue(module.exports)
 
 
 /***/ }),
-/* 74 */
+/* 78 */
 /***/ (function(module, exports) {
 
 module.exports = {
   "container": {
-    "backgroundColor": "#ffffff"
+    "backgroundColor": "#f2f2f2"
+  },
+  "title": {
+    "fontSize": "30",
+    "paddingTop": "15",
+    "paddingRight": "15",
+    "paddingBottom": "15",
+    "paddingLeft": "15",
+    "color": "#666666"
   },
   "item": {
     "justifyContent": "center",
     "alignItems": "center",
-    "marginTop": "20",
-    "marginRight": "20",
-    "marginBottom": "20",
-    "marginLeft": "20"
-  },
-  "center": {
-    "color": "#333333",
-    "fontSize": "35"
-  },
-  "title": {
-    "fontSize": "30",
-    "color": "#666666",
-    "backgroundColor": "#f2f2f2",
-    "paddingTop": "15",
-    "paddingRight": "15",
-    "paddingBottom": "15",
-    "paddingLeft": "15"
+    "marginTop": "50"
   }
 }
 
 /***/ }),
-/* 75 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2624,152 +2620,118 @@ var modal = weex.requireModule('modal'); //
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 exports.default = {
     data: function data() {
         return {
             show: false,
-            show1: false,
-            show2: false,
-            actions: ['打开相册', '打开相机'],
-            actions1: ['样式一', '样式二', '样式三']
-
+            img: 'http://chuantu.biz/t6/281/1523500757x-1404793106.png'
         };
     },
     created: function created() {},
 
     components: {
-        ZfSheet: _index.ZfSheet
+        ZfTag: _index.ZfTag
     },
     methods: {
-        clickItem: function clickItem(e) {
-            switch (e) {
-                case 0:
-                    this.show = true;
-                    break;
-                case 1:
-                    this.show1 = true;
-                    break;
-                case 2:
-                    this.show2 = true;
-                    break;
-            }
-        },
-        clickCancel: function clickCancel() {
-            if (this.show) {
-                this.show = false;
-            }
-            if (this.show1) {
-                this.show1 = false;
-            }
-            if (this.show2) {
-                this.show2 = false;
-            }
-        },
-        clickSheetItem: function clickSheetItem(e) {
-            if (this.show) {
-                this.show = false;
-            }
-            if (this.show1) {
-                this.show1 = false;
-            }
-            if (this.show2) {
-                this.show2 = false;
-            }
+        clickTag: function clickTag() {
             modal.toast({
-                message: e.value
+                message: '点击了'
             });
         }
     }
 };
 
 /***/ }),
-/* 76 */
+/* 80 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["container"]
-  }, [_c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("样式一(默认样式)")]), _c('div', {
+  }, [_c('scroller', [_c('div', {
     staticClass: ["item"]
   }, [_c('text', {
-    staticClass: ["center"],
-    on: {
-      "click": function($event) {
-        _vm.clickItem(0)
-      }
-    }
-  }, [_vm._v("点击弹出")])]), _c('zf-sheet', {
+    staticClass: ["title"]
+  }, [_vm._v("样式一(direction = left、space=20)")]), _c('zf-tag', {
     attrs: {
-      "show": _vm.show,
-      "actions": _vm.actions,
-      "actionCancelTitle": "取消",
-      "actionTitle": "选择方式"
+      "space": "20",
+      "src": _vm.img,
+      "content": "这是样式一"
     },
     on: {
-      "clickItem": _vm.clickSheetItem,
-      "clickCancel": _vm.clickCancel
+      "zfClickTag": _vm.clickTag
     }
-  }), _c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("样式二")]), _c('div', {
+  })], 1), _c('div', {
     staticClass: ["item"]
   }, [_c('text', {
-    staticClass: ["center"],
-    on: {
-      "click": function($event) {
-        _vm.clickItem(1)
-      }
-    }
-  }, [_vm._v("点击弹出样式二")])]), _c('zf-sheet', {
+    staticClass: ["title"]
+  }, [_vm._v("样式二(direction = right、bgColor=\"#fff\")")]), _c('zf-tag', {
     attrs: {
-      "show": _vm.show1,
-      "actions": _vm.actions1,
-      "actionCancelTitle": "取消"
+      "src": _vm.img,
+      "bgColor": "#fff",
+      "direction": "right",
+      "content": "这是样式二"
     },
     on: {
-      "clickItem": _vm.clickSheetItem,
-      "clickCancel": _vm.clickCancel
+      "zfClickTag": _vm.clickTag
     }
-  }), _c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("样式三")]), _c('div', {
+  })], 1), _c('div', {
     staticClass: ["item"]
   }, [_c('text', {
-    staticClass: ["center"],
-    on: {
-      "click": function($event) {
-        _vm.clickItem(2)
-      }
-    }
-  }, [_vm._v("点击弹出样式三")])]), _c('zf-sheet', {
+    staticClass: ["title"]
+  }, [_vm._v("样式三(direction = top、iconWidth=50px)")]), _c('zf-tag', {
     attrs: {
-      "show": _vm.show2,
-      "canClickMask": "true",
-      "actions": _vm.actions1
+      "iconWidth": "50px",
+      "src": _vm.img,
+      "direction": "top",
+      "content": "这是样式三"
     },
     on: {
-      "clickItem": _vm.clickSheetItem,
-      "clickCancel": _vm.clickCancel
+      "zfClickTag": _vm.clickTag
     }
-  })], 1)
+  })], 1), _c('div', {
+    staticClass: ["item"]
+  }, [_c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("样式四(direction = top、size=30、color=red)")]), _c('zf-tag', {
+    attrs: {
+      "size": "30px",
+      "color": "red",
+      "src": _vm.img,
+      "direction": "bottom",
+      "content": "这是样式四"
+    },
+    on: {
+      "zfClickTag": _vm.clickTag
+    }
+  })], 1), _c('div', {
+    staticClass: ["item"]
+  }, [_c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("样式五(direction = top、right、bottom、left、isShow=show)")]), _c('zf-tag', {
+    attrs: {
+      "bgColor": "#fff",
+      "isShow": _vm.show,
+      "content": "这是样式五"
+    },
+    on: {
+      "zfClickTag": _vm.clickTag
+    }
+  })], 1), _c('div', {
+    staticClass: ["item"]
+  }, [_c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("样式六(direction = top、right、bottom、left)")]), _c('zf-tag', {
+    attrs: {
+      "bgColor": "#fff",
+      "src": _vm.img
+    },
+    on: {
+      "zfClickTag": _vm.clickTag
+    }
+  })], 1)])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

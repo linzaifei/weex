@@ -62,101 +62,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 95);
+/******/ 	return __webpack_require__(__webpack_require__.s = 97);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 10:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["container"],
-    style: {
-      padding: _vm.margin,
-      backgroundColor: _vm.bgColor
-    }
-  }, [_vm._l((_vm.list), function(item, index) {
-    return _c('block', {
-      key: index
-    }, [_c('div', {
-      staticClass: ["item"],
-      style: {
-        width: _vm.itemW,
-        height: _vm.itemW,
-        marginBottom: index < _vm.getBottom ? _vm.space + 'px' : '0px',
-        marginLeft: index == parseInt(index / _vm.getCount) * _vm.getCount ? '0px' : _vm.space + 'px'
-      }
-    }, [_c('image', {
-      staticClass: ["item_img"],
-      style: {
-        width: _vm.itemW,
-        height: _vm.itemW
-      },
-      attrs: {
-        "src": item
-      }
-    }), (_vm.showClose) ? _c('image', {
-      staticClass: ["item_close"],
-      attrs: {
-        "src": _vm.close
-      },
-      on: {
-        "click": function($event) {
-          _vm.del(index)
-        }
-      }
-    }) : _vm._e()])])
-  }), (_vm.list.length < _vm.max) ? _c('div', {
-    style: {
-      marginLeft: _vm.getMarfinLeft == 0 ? '0px' : _vm.space + 'px'
-    },
-    on: {
-      "click": _vm.addAction
-    }
-  }, [_c('image', {
-    staticClass: ["item_img"],
-    style: {
-      width: _vm.itemW,
-      height: _vm.itemW
-    },
-    attrs: {
-      "src": _vm.add
-    }
-  })]) : _vm._e()], 2)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-
-/***/ }),
-
-/***/ 8:
+/***/ 1:
 /***/ (function(module, exports) {
 
 module.exports = {
-  "container": {
-    "width": "750",
-    "flexDirection": "row",
-    "justifyContent": "flex-start",
-    "flexWrap": "wrap"
-  },
   "item": {
-    "position": "relative",
-    "borderRadius": "8",
-    "overflow": "hidden"
-  },
-  "item_close": {
-    "position": "absolute",
-    "right": "5",
-    "top": "5",
-    "width": "40",
-    "height": "40"
+    "paddingTop": "10",
+    "paddingRight": "10",
+    "paddingBottom": "10",
+    "paddingLeft": "10"
   }
 }
 
 /***/ }),
 
-/***/ 9:
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -178,77 +103,153 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-
-var modal = weex.requireModule('modal');
 
 exports.default = {
     props: {
-        space: { default: 5 }, //item中间间距
-        margin: { default: 5 }, //item外间距
-        count: { default: 4 }, //水平item个数
-        list: { default: [] },
-        max: { default: 9 }, //最大9个
-        showClose: { default: true }, //隐藏删除
-        bgColor: { default: '#fff' }
+        src: { default: '' },
+        content: { default: '' },
+        color: { default: '#666' },
+        size: { default: '27px' },
+        iconWidth: { default: '35px' },
+        direction: { default: 'left' },
+        bgColor: { default: 'transparent' },
+        space: { default: "8px" }
     },
     data: function data() {
-        return {
-            close: 'https://linzaifei.github.io/weex/img/close.png',
-            add: 'https://linzaifei.github.io/weex/img/add.png',
-            itemW: '',
-            index: 0
-        };
-    },
-    created: function created() {
-
-        this.itemW = (750 - 2 * this.margin - (this.getCount - 1) * this.space) / this.getCount + 'px';
+        return {};
     },
 
-    watch: {},
     computed: {
-        getBottom: function getBottom() {
-
-            return parseInt(this.list.length / this.getCount) * this.getCount;
-        },
-        getMarfinLeft: function getMarfinLeft() {
-            return this.list.length % this.getCount;
-        },
-        getCount: function getCount() {
-            if (this.count > 5 || this.count < 3) {
-                return 3;
+        itemStyle: function itemStyle() {
+            if (this.direction == 'left') {
+                return {
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    backgroundColor: this.bgColor
+                };
+            } else if (this.direction == 'top') {
+                return {
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    backgroundColor: this.bgColor
+                };
+            } else if (this.direction == 'right') {
+                return {
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    backgroundColor: this.bgColor
+                };
+            } else if (this.direction == 'bottom') {
+                return {
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    backgroundColor: this.bgColor
+                };
             }
-            return this.count;
+        },
+        textStyle: function textStyle() {
+            if (this.direction == 'left') {
+                return {
+                    marginLeft: this.src ? this.space : '0px'
+                };
+            } else if (this.direction == 'top') {
+                return {
+                    marginTop: this.src ? this.space : '0px'
+                };
+            } else if (this.direction == 'right') {
+                return {
+                    marginRight: this.src ? this.space : '0px'
+                };
+            } else if (this.direction == 'bottom') {
+                return {
+                    marginBottom: this.src ? this.space : '0px'
+                };
+            }
         }
     },
+    created: function created() {},
+
     components: {},
     methods: {
-        del: function del(index) {
-            this.list.splice(index, 1);
-        },
-        addAction: function addAction() {
-            this.$emit('addPhoto', {});
+        clickTag: function clickTag() {
+            this.$emit("zfClickTag", {});
         }
     }
 };
 
 /***/ }),
 
-/***/ 95:
+/***/ 3:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["container"]
+  }, [(_vm.direction == 'left' || _vm.direction == 'top') ? _c('div', {
+    staticClass: ["item"],
+    style: _vm.itemStyle,
+    on: {
+      "click": _vm.clickTag
+    }
+  }, [(_vm.src) ? _c('image', {
+    staticClass: ["img"],
+    style: {
+      width: _vm.iconWidth,
+      height: _vm.iconWidth
+    },
+    attrs: {
+      "resize": "contain",
+      "src": _vm.src
+    }
+  }) : _vm._e(), (_vm.content) ? _c('text', {
+    staticClass: ["content"],
+    style: [{
+      color: _vm.color,
+      fontSize: _vm.size,
+    }, _vm.textStyle]
+  }, [_vm._v(_vm._s(_vm.content))]) : _vm._e()]) : _vm._e(), (_vm.direction == 'right' || _vm.direction == 'bottom') ? _c('div', {
+    staticClass: ["item"],
+    style: _vm.itemStyle,
+    on: {
+      "click": _vm.clickTag
+    }
+  }, [(_vm.content) ? _c('text', {
+    staticClass: ["content"],
+    style: [{
+      color: _vm.color,
+      fontSize: _vm.size
+    }, _vm.textStyle]
+  }, [_vm._v(_vm._s(_vm.content))]) : _vm._e(), (_vm.src) ? _c('image', {
+    staticClass: ["img"],
+    style: {
+      width: _vm.iconWidth,
+      height: _vm.iconWidth
+    },
+    attrs: {
+      "resize": "contain",
+      "src": _vm.src
+    }
+  }) : _vm._e()]) : _vm._e()])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 97:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(8)
+__vue_styles__.push(__webpack_require__(1)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(9)
+__vue_exports__ = __webpack_require__(2)
 
 /* template */
-var __vue_template__ = __webpack_require__(10)
+var __vue_template__ = __webpack_require__(3)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -260,10 +261,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/linzaifei/Desktop/linzaifei/Weex/project/zf_components/src/packages/zf-selectItem/zf-selectItem.vue"
+__vue_options__.__file = "/Users/linzaifei/Desktop/linzaifei/Weex/project/zf_components/src/packages/zf-tag/zf-tag.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-083d15fd"
+__vue_options__._scopeId = "data-v-4ccbbc8a"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {

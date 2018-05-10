@@ -62,12 +62,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 65);
+/******/ 	return __webpack_require__(__webpack_require__.s = 94);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 0:
+/***/ 5:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -83,7 +83,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1:
+/***/ 6:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -107,10 +107,11 @@ Object.defineProperty(exports, "__esModule", {
 var modal = weex.requireModule('modal');
 exports.default = {
     props: {
+        //
         rate: { default: 0 },
-        imgStar: { default: 'http://chuantu.biz/t6/297/1524813946x-1566638171.png' }, //空
-        imgStarHalf: { default: 'http://chuantu.biz/t6/297/1524814019x-1566638171.png' }, //半高亮
-        imgStarHight: { default: 'http://chuantu.biz/t6/297/1524814035x-1566638171.png' }, //高亮
+        imgStar: { default: 'https://linzaifei.github.io/weex/img/comment_star.png' }, //空
+        imgStarHalf: { default: 'https://linzaifei.github.io/weex/img/comment_star_half.png' }, //半高亮
+        imgStarHight: { default: 'https://linzaifei.github.io/weex/img/comment_star_highlighted.png' }, //高亮
         maxRate: { default: 5 }, //默认5分值
         iconWidth: { default: 30 },
         bgColor: { default: '#fff' }
@@ -148,7 +149,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 2:
+/***/ 7:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -196,21 +197,21 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 65:
+/***/ 94:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(0)
+__vue_styles__.push(__webpack_require__(5)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(1)
+__vue_exports__ = __webpack_require__(6)
 
 /* template */
-var __vue_template__ = __webpack_require__(2)
+var __vue_template__ = __webpack_require__(7)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||

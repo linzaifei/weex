@@ -62,12 +62,75 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 63);
+/******/ 	return __webpack_require__(__webpack_require__.s = 90);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 10:
+/***/ 14:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "container": {
+    "position": "fixed",
+    "top": 0,
+    "left": 0,
+    "right": 0,
+    "bottom": 0,
+    "zIndex": 100,
+    "justifyContent": "center",
+    "alignItems": "center"
+  },
+  "alert": {
+    "width": "500",
+    "borderRadius": "20",
+    "backgroundColor": "#ffffff"
+  },
+  "alert_title": {
+    "fontSize": "32",
+    "color": "#333333"
+  },
+  "btn": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "borderColor": "#dddddd",
+    "borderTopWidth": "1"
+  },
+  "alert_content": {
+    "marginTop": "15",
+    "fontSize": "29",
+    "color": "#666666"
+  },
+  "top": {
+    "textAlign": "center",
+    "justifyContent": "center",
+    "alignItems": "center",
+    "flexDirection": "column",
+    "paddingTop": "20",
+    "paddingRight": "20",
+    "paddingBottom": "20",
+    "paddingLeft": "20"
+  },
+  "left": {
+    "flex": 1,
+    "textAlign": "center",
+    "borderColor": "#dddddd",
+    "borderRightWidth": "1"
+  },
+  "right": {
+    "flex": 1,
+    "textAlign": "center"
+  },
+  "tag": {
+    "paddingTop": "15",
+    "paddingBottom": "15",
+    "fontSize": "35"
+  }
+}
+
+/***/ }),
+
+/***/ 15:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -170,7 +233,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 11:
+/***/ 16:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -218,21 +281,21 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 63:
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(9)
+__vue_styles__.push(__webpack_require__(14)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(10)
+__vue_exports__ = __webpack_require__(15)
 
 /* template */
-var __vue_template__ = __webpack_require__(11)
+var __vue_template__ = __webpack_require__(16)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -262,69 +325,6 @@ module.exports = __vue_exports__
 module.exports.el = 'true'
 new Vue(module.exports)
 
-
-/***/ }),
-
-/***/ 9:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "container": {
-    "position": "fixed",
-    "top": 0,
-    "left": 0,
-    "right": 0,
-    "bottom": 0,
-    "zIndex": 100,
-    "justifyContent": "center",
-    "alignItems": "center"
-  },
-  "alert": {
-    "width": "500",
-    "borderRadius": "20",
-    "backgroundColor": "#ffffff"
-  },
-  "alert_title": {
-    "fontSize": "32",
-    "color": "#333333"
-  },
-  "btn": {
-    "flexDirection": "row",
-    "alignItems": "center",
-    "borderColor": "#dddddd",
-    "borderTopWidth": "1"
-  },
-  "alert_content": {
-    "marginTop": "15",
-    "fontSize": "29",
-    "color": "#666666"
-  },
-  "top": {
-    "textAlign": "center",
-    "justifyContent": "center",
-    "alignItems": "center",
-    "flexDirection": "column",
-    "paddingTop": "20",
-    "paddingRight": "20",
-    "paddingBottom": "20",
-    "paddingLeft": "20"
-  },
-  "left": {
-    "flex": 1,
-    "textAlign": "center",
-    "borderColor": "#dddddd",
-    "borderRightWidth": "1"
-  },
-  "right": {
-    "flex": 1,
-    "textAlign": "center"
-  },
-  "tag": {
-    "paddingTop": "15",
-    "paddingBottom": "15",
-    "fontSize": "35"
-  }
-}
 
 /***/ })
 
