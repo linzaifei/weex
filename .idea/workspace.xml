@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cb4100c-2338-4e6a-8a93-4ae6a9335d09" name="Default" comment="" />
+    <list default="true" id="2cb4100c-2338-4e6a-8a93-4ae6a9335d09" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/packages/zf-rate/zf-rate.vue" afterPath="$PROJECT_DIR$/src/packages/zf-rate/zf-rate.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/packages/zf-selectItem/zf-selectItem.vue" afterPath="$PROJECT_DIR$/src/packages/zf-selectItem/zf-selectItem.vue" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,36 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/examples/zf-alert/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1635">
-              <caret line="109" column="30" lean-forward="false" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zf-sheet.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/packages/zf-sheet/zf-sheet.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1605">
-              <caret line="107" column="27" lean-forward="false" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/examples/zf-sheet/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="zf-time.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/packages/zf-time/zf-time.vue">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,11 +54,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
               <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/examples/zf-selectItem/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zf-selectItem.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/packages/zf-selectItem/zf-selectItem.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zf-rate.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/packages/zf-rate/zf-rate.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -157,7 +160,6 @@
         <option value="$PROJECT_DIR$/dist/examples/zf-rate/index.js" />
         <option value="$PROJECT_DIR$/src/packages/zf-rate/package.json" />
         <option value="$PROJECT_DIR$/src/packages/zf-rate/index.js" />
-        <option value="$PROJECT_DIR$/src/packages/zf-rate/zf-rate.vue" />
         <option value="$PROJECT_DIR$/src/packages/zf-selectItem/index.js" />
         <option value="$PROJECT_DIR$/src/examples/zf-selectItem/index.js" />
         <option value="$PROJECT_DIR$/src/packages/zf-mask/index.js" />
@@ -165,7 +167,6 @@
         <option value="$PROJECT_DIR$/src/examples/zf-mask/index.js" />
         <option value="$PROJECT_DIR$/src/examples/zf-alert/index.js" />
         <option value="$PROJECT_DIR$/src/examples/zf-rate/index.vue" />
-        <option value="$PROJECT_DIR$/src/packages/zf-selectItem/zf-selectItem.vue" />
         <option value="$PROJECT_DIR$/src/examples/zf-selectItem/index.vue" />
         <option value="$PROJECT_DIR$/src/examples/zf-mask/index.vue" />
         <option value="$PROJECT_DIR$/src/packages/zf-mask/zf-mask.vue" />
@@ -183,6 +184,8 @@
         <option value="$PROJECT_DIR$/src/packages/zf-time/zf-time.vue" />
         <option value="$PROJECT_DIR$/src/examples/zf-time/index.vue" />
         <option value="$PROJECT_DIR$/src/index.vue" />
+        <option value="$PROJECT_DIR$/src/packages/zf-selectItem/zf-selectItem.vue" />
+        <option value="$PROJECT_DIR$/src/packages/zf-rate/zf-rate.vue" />
       </list>
     </option>
   </component>
@@ -241,6 +244,20 @@
               <item name="zf_components" type="b2602c69:ProjectViewProjectNode" />
               <item name="zf_components" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="zf-alert" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zf_components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zf_components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="zf-selectItem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zf_components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zf_components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -248,7 +265,7 @@
               <item name="zf_components" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="zf-time" type="462c0819:PsiDirectoryNode" />
+              <item name="zf-rate" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -290,12 +307,12 @@
       <workItem from="1525741656285" duration="19215000" />
       <workItem from="1525827990841" duration="19362000" />
       <workItem from="1525868059605" duration="66000" />
-      <workItem from="1525915408473" duration="3558000" />
+      <workItem from="1525915408473" duration="3737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48270000" />
+    <option name="totallyTimeSpent" value="48449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="25" width="1400" height="819" extended-state="0" />
@@ -492,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/packages/zf-rate/zf-rate.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/packages/zf-rate/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -562,21 +572,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/packages/zf-selectItem/zf-selectItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="193" lean-forward="false" selection-start-line="3" selection-start-column="193" selection-end-line="3" selection-end-column="193" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/examples/zf-time.vue" />
-    <entry file="file://$PROJECT_DIR$/src/examples/zf-selectItem/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/examples/zf-alert/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -707,6 +703,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/zf-selectItem/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/packages/zf-selectItem/zf-selectItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/packages/zf-rate/zf-rate.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding />
         </state>
       </provider>

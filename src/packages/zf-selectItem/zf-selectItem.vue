@@ -27,8 +27,8 @@
         },
         data() {
             return {
-                close:'http://chuantu.biz/t6/300/1525251856x-1404781168.png',
-                add:'http://chuantu.biz/t6/300/1525252504x-1566638249.png',
+                close:'https://linzaifei.github.io/weex/img/close.png',
+                add:'https://linzaifei.github.io/weex/img/add.png',
                 itemW:'',
                 index:0,
             }

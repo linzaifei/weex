@@ -13,10 +13,11 @@
     const modal =weex.requireModule('modal')
     export default {
         props:{
+//
             rate:{default:0},
-            imgStar:{default:'http://chuantu.biz/t6/297/1524813946x-1566638171.png'},//空
-            imgStarHalf:{default:'http://chuantu.biz/t6/297/1524814019x-1566638171.png'},//半高亮
-            imgStarHight:{default:'http://chuantu.biz/t6/297/1524814035x-1566638171.png'},//高亮
+            imgStar:{default:'https://linzaifei.github.io/weex/img/comment_star.png'},//空
+            imgStarHalf:{default:'https://linzaifei.github.io/weex/img/comment_star_half.png'},//半高亮
+            imgStarHight:{default:'https://linzaifei.github.io/weex/img/comment_star_highlighted.png'},//高亮
             maxRate:{default:5},//默认5分值
             iconWidth:{default:30},
             bgColor:{default:'#fff'},
