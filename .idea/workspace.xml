@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cb4100c-2338-4e6a-8a93-4ae6a9335d09" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/components/HelloWorld.js" afterPath="$PROJECT_DIR$/dist/components/HelloWorld.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-alert/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-alert/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-mask/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-mask/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-rate/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-rate/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-selectItem/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-selectItem/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.js" afterPath="$PROJECT_DIR$/dist/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-alert/zf-alert.js" afterPath="$PROJECT_DIR$/dist/packages/zf-alert/zf-alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-mask/zf-mask.js" afterPath="$PROJECT_DIR$/dist/packages/zf-mask/zf-mask.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-rate/zf-rate.js" afterPath="$PROJECT_DIR$/dist/packages/zf-rate/zf-rate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-selectItem/zf-selectItem.js" afterPath="$PROJECT_DIR$/dist/packages/zf-selectItem/zf-selectItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/examples/zf-alert/index.vue" afterPath="$PROJECT_DIR$/src/examples/zf-alert/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.vue" afterPath="$PROJECT_DIR$/src/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/packages/zf-alert/zf-alert.vue" afterPath="$PROJECT_DIR$/src/packages/zf-alert/zf-alert.vue" />
-    </list>
+    <list default="true" id="2cb4100c-2338-4e6a-8a93-4ae6a9335d09" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -209,9 +193,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="6" />
