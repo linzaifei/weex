@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cb4100c-2338-4e6a-8a93-4ae6a9335d09" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/packages/zf-rate/zf-rate.vue" afterPath="$PROJECT_DIR$/src/packages/zf-rate/zf-rate.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/packages/zf-selectItem/zf-selectItem.vue" afterPath="$PROJECT_DIR$/src/packages/zf-selectItem/zf-selectItem.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/packages/zf-sheet/zf-sheet.vue" afterPath="$PROJECT_DIR$/src/packages/zf-sheet/zf-sheet.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,6 +29,16 @@
                 <element signature="e#4692#4835#0" expanded="false" />
                 <element signature="e#4717#4821#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zf-sheet.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/packages/zf-sheet/zf-sheet.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="188" column="24" lean-forward="true" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zf-rate.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zf-rate.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/packages/zf-rate/zf-rate.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -114,16 +123,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/examples/zf-sheet/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -146,6 +145,8 @@
       <find>completed</find>
       <find>countVal</find>
       <find>defaultVal</find>
+      <find>action-item</find>
+      <find>action-cancel-text</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/packages/utils/mixins.js" />
         <option value="$PROJECT_DIR$/dist/examples/zf-alert/index.js" />
-        <option value="$PROJECT_DIR$/src/packages/zf-sheet/zf-sheet.vue" />
         <option value="$PROJECT_DIR$/src/examples/zf-sheet/index.vue" />
         <option value="$PROJECT_DIR$/src/examples/zf-time/index.js" />
         <option value="$PROJECT_DIR$/src/packages/zf-time/index.js" />
@@ -186,6 +186,7 @@
         <option value="$PROJECT_DIR$/src/index.vue" />
         <option value="$PROJECT_DIR$/src/packages/zf-selectItem/zf-selectItem.vue" />
         <option value="$PROJECT_DIR$/src/packages/zf-rate/zf-rate.vue" />
+        <option value="$PROJECT_DIR$/src/packages/zf-sheet/zf-sheet.vue" />
       </list>
     </option>
   </component>
@@ -265,7 +266,7 @@
               <item name="zf_components" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="zf-rate" type="462c0819:PsiDirectoryNode" />
+              <item name="zf-sheet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,12 +308,12 @@
       <workItem from="1525741656285" duration="19215000" />
       <workItem from="1525827990841" duration="19362000" />
       <workItem from="1525868059605" duration="66000" />
-      <workItem from="1525915408473" duration="3737000" />
+      <workItem from="1525915408473" duration="4004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48449000" />
+    <option name="totallyTimeSpent" value="48716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="25" width="1400" height="819" extended-state="0" />
@@ -620,14 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/packages/zf-sheet/zf-sheet.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="107" column="27" lean-forward="false" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/examples/zf-alert/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1635">
@@ -727,6 +720,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/packages/zf-sheet/zf-sheet.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="188" column="24" lean-forward="true" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="24" />
           <folding />
         </state>
       </provider>

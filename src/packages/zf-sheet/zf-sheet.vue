@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div @click="clickCancel"  v-if="actionCancelTitle" class="action-cancel">
-                <text :style="{color:actionCancelColor}" color="action-cancel-text">{{actionCancelTitle}}</text>
+                <text :style="{color:actionCancelColor}" class="action-cancel-text">{{actionCancelTitle}}</text>
             </div>
 
         </div>
@@ -180,6 +180,7 @@
         width: 710px;
         height: 100px;
         border-radius: 20px;
+
         justify-content: center;
         align-items: center;
         background-color: #fff;
