@@ -1,3 +1,9 @@
+
+
+浏览(用WeexPalyground扫)
+![image](https://github.com/linzaifei/weex/blob/master/1525921215.png)
+
+
 ## Commands
 
 ### npm start
