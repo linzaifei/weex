@@ -1,9 +1,7 @@
 
 
-浏览
-(image)[https://github.com/linzaifei/weex/blob/master/1525921215.png]
-
-
+浏览(用WeexPalyground扫)
+![image](https://github.com/linzaifei/weex/blob/master/1525921215.png)
 
 
 ## Commands
