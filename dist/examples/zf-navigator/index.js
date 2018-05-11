@@ -1604,11 +1604,11 @@ exports.default = {
         ZfTag: _zfTag2.default
     },
     methods: {
-        clickCell: function clickCell(index) {
+        clickCell: function clickCell() {
             var self = this;
             self.$emit("clickItem", {
                 data: {
-                    key: String(index)
+                    key: String(self.index)
                 }
             });
         },
@@ -1652,9 +1652,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       backgroundColor: _vm.BgColor
     },
     on: {
-      "click": function($event) {
-        _vm.clickCell(_vm.index)
-      }
+      "click": _vm.clickCell
     }
   }, [_c('div', {
     staticClass: ["left"]
@@ -1666,6 +1664,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "color": _vm.leftColor,
       "size": _vm.leftFont,
       "content": _vm.leftTitle
+    },
+    on: {
+      "zfClickTag": _vm.clickCell
     }
   })])], 2), _c('div', {
     staticClass: ["right"]
@@ -1685,6 +1686,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "color": _vm.rightColor,
       "size": _vm.rightFont,
       "content": _vm.rightTitle
+    },
+    on: {
+      "zfClickTag": _vm.clickCell
     }
   }) : _vm._e()])], 2)])
 },staticRenderFns: []}
@@ -1766,7 +1770,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 
 var navigator = weex.requireModule('navigator');
-
 
 var modal = weex.requireModule('modal');
 
@@ -1855,7 +1858,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": _vm.centerImg,
       "space": "15px",
-      "iconWidth": _vm.leftImgWidth,
+      "iconWidth": _vm.centerImgWidth,
       "color": _vm.centerColor,
       "size": _vm.centerFont,
       "content": _vm.centerTitle
@@ -2534,6 +2537,9 @@ new Vue(module.exports)
 /***/ (function(module, exports) {
 
 module.exports = {
+  "container": {
+    "backgroundColor": "#f2f2f2"
+  },
   "title": {
     "fontSize": "30",
     "color": "#666666",
@@ -2542,6 +2548,14 @@ module.exports = {
     "paddingBottom": "15",
     "paddingLeft": "15",
     "marginTop": "10"
+  },
+  "center_title": {
+    "fontSize": "35",
+    "color": "#333333",
+    "fontWeight": "bold"
+  },
+  "right": {
+    "flexDirection": "row"
   }
 }
 
@@ -2591,12 +2605,41 @@ var modal = weex.requireModule('modal'); //
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 exports.default = {
     data: function data() {
         return {
-            submitImg: "http://chuantu.biz/t6/287/1523861847x-1566638291.png"
+            useDefaultReturn: false,
+            submitImg: "http://chuantu.biz/t6/287/1523861847x-1566638291.png",
+            centerImg: 'http://chuantu.biz/t6/281/1523499220x-1404793477.png'
         };
     },
     created: function created() {},
@@ -2620,7 +2663,7 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["container"]
-  }, [_c('text', {
+  }, [_c('scroller', [_c('text', {
     staticClass: ["title"]
   }, [_vm._v("样式一")]), _c('zf-navigator', {
     attrs: {
@@ -2628,7 +2671,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('text', {
     staticClass: ["title"]
-  }, [_vm._v("样式二")]), _c('zf-navigator', {
+  }, [_vm._v("样式二(bgColor)")]), _c('zf-navigator', {
     attrs: {
       "leftTitle": "返回",
       "centerTitle": "这是标题二",
@@ -2636,7 +2679,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('text', {
     staticClass: ["title"]
-  }, [_vm._v("样式三")]), _c('zf-navigator', {
+  }, [_vm._v("样式三(rightTitle、rightColor、rightImg)")]), _c('zf-navigator', {
     attrs: {
       "leftTitle": "返回",
       "centerTitle": "这是标题二",
@@ -2647,7 +2690,69 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "rightButtonClicked": _vm.rightButtonClicked
     }
-  })], 1)
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("样式四(标题是图片centerImg、centerImgWidth)")]), _c('zf-navigator', {
+    attrs: {
+      "centerImg": _vm.centerImg,
+      "centerTitle": "",
+      "centerImgWidth": "170px"
+    }
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("样式五(自定义导航栏)")]), _c('zf-navigator', {
+    attrs: {
+      "useDefaultReturn": _vm.useDefaultReturn
+    }
+  }, [_c('div', {
+    staticClass: ["left"],
+    attrs: {
+      "slot": "left"
+    },
+    slot: "left"
+  }, [_c('text', {
+    staticStyle: {
+      color: "#333333",
+      fontSize: "28px"
+    }
+  }, [_vm._v("左边")])]), _c('div', {
+    staticClass: ["center"],
+    attrs: {
+      "slot": "center"
+    },
+    slot: "center"
+  }, [_c('text', {
+    staticClass: ["center_title"]
+  }, [_vm._v("样式五")])]), _c('div', {
+    staticClass: ["right"],
+    attrs: {
+      "slot": "right"
+    },
+    slot: "right"
+  }, [_c('image', {
+    staticStyle: {
+      height: "40px",
+      width: "40px"
+    },
+    attrs: {
+      "src": "http://chuantu.biz/t6/277/1523176231x-1404781300.png"
+    },
+    on: {
+      "click": _vm.searchAction
+    }
+  }), _c('image', {
+    staticStyle: {
+      height: "40px",
+      width: "40px",
+      marginLeft: "15px"
+    },
+    attrs: {
+      "src": "http://chuantu.biz/t6/277/1523176208x-1404781300.png"
+    },
+    on: {
+      "click": _vm.historyAction
+    }
+  })])])], 1)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

@@ -1,14 +1,14 @@
 <template >
-    <div :class="['item',isBorder ?'border':'']" :style="{backgroundColor:BgColor}" @click="clickCell(index)">
+    <div :class="['item',isBorder ?'border':'']" :style="{backgroundColor:BgColor}" @click="clickCell">
         <div class="left">
             <slot name="left">
-                <zf-tag :src="leftImg" space="20" :iconWidth="leftImgWidth"  :color="leftColor" :size="leftFont" :content="leftTitle" />
+                <zf-tag @zfClickTag="clickCell" :src="leftImg" space="20" :iconWidth="leftImgWidth"  :color="leftColor" :size="leftFont" :content="leftTitle" />
             </slot>
         </div>
         <div class="right">
             <slot name="right">
                 <switch v-if="isSwitch" @change="onchange" :checked="checked"></switch>
-                <zf-tag v-if="!isSwitch" :src="rightImg" direction="right" space="15"  :iconWidth="rightImgWidth"  :color="rightColor" :size="rightFont" :content="rightTitle" />
+                <zf-tag @zfClickTag="clickCell" v-if="!isSwitch" :src="rightImg" direction="right" space="15"  :iconWidth="rightImgWidth"  :color="rightColor" :size="rightFont" :content="rightTitle" />
             </slot>
         </div>
     </div>
@@ -50,11 +50,11 @@
             ZfTag,
         },
         methods: {
-            clickCell:function (index) {
+            clickCell:function () {
                 const self = this;
                 self.$emit("clickItem",{
                     data : {
-                        key :String(index),
+                        key :String(self.index),
                     }
                 })
             },

@@ -279,7 +279,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var navigator = weex.requireModule('navigator');
 
-
 var modal = weex.requireModule('modal');
 
 exports.default = {
@@ -368,7 +367,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": _vm.centerImg,
       "space": "15px",
-      "iconWidth": _vm.leftImgWidth,
+      "iconWidth": _vm.centerImgWidth,
       "color": _vm.centerColor,
       "size": _vm.centerFont,
       "content": _vm.centerTitle

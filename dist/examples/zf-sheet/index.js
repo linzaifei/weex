@@ -1604,11 +1604,11 @@ exports.default = {
         ZfTag: _zfTag2.default
     },
     methods: {
-        clickCell: function clickCell(index) {
+        clickCell: function clickCell() {
             var self = this;
             self.$emit("clickItem", {
                 data: {
-                    key: String(index)
+                    key: String(self.index)
                 }
             });
         },
@@ -1652,9 +1652,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       backgroundColor: _vm.BgColor
     },
     on: {
-      "click": function($event) {
-        _vm.clickCell(_vm.index)
-      }
+      "click": _vm.clickCell
     }
   }, [_c('div', {
     staticClass: ["left"]
@@ -1666,6 +1664,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "color": _vm.leftColor,
       "size": _vm.leftFont,
       "content": _vm.leftTitle
+    },
+    on: {
+      "zfClickTag": _vm.clickCell
     }
   })])], 2), _c('div', {
     staticClass: ["right"]
@@ -1685,6 +1686,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "color": _vm.rightColor,
       "size": _vm.rightFont,
       "content": _vm.rightTitle
+    },
+    on: {
+      "zfClickTag": _vm.clickCell
     }
   }) : _vm._e()])], 2)])
 },staticRenderFns: []}
@@ -1766,7 +1770,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 
 var navigator = weex.requireModule('navigator');
-
 
 var modal = weex.requireModule('modal');
 
@@ -1855,7 +1858,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": _vm.centerImg,
       "space": "15px",
-      "iconWidth": _vm.leftImgWidth,
+      "iconWidth": _vm.centerImgWidth,
       "color": _vm.centerColor,
       "size": _vm.centerFont,
       "content": _vm.centerTitle

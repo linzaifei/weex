@@ -3,22 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="2cb4100c-2338-4e6a-8a93-4ae6a9335d09" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/components/HelloWorld.js" afterPath="$PROJECT_DIR$/dist/components/HelloWorld.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-alert/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-alert/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-item/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-item/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-mask/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-mask/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-navigator/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-navigator/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-rate/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-rate/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-selectItem/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-selectItem/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-sheet/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-sheet/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-tag/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-tag/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/examples/zf-time/index.js" afterPath="$PROJECT_DIR$/dist/examples/zf-time/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.js" afterPath="$PROJECT_DIR$/dist/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-alert/zf-alert.js" afterPath="$PROJECT_DIR$/dist/packages/zf-alert/zf-alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-mask/zf-mask.js" afterPath="$PROJECT_DIR$/dist/packages/zf-mask/zf-mask.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-rate/zf-rate.js" afterPath="$PROJECT_DIR$/dist/packages/zf-rate/zf-rate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-selectItem/zf-selectItem.js" afterPath="$PROJECT_DIR$/dist/packages/zf-selectItem/zf-selectItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-sheet/zf-sheet.js" afterPath="$PROJECT_DIR$/dist/packages/zf-sheet/zf-sheet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-time/zf-time.js" afterPath="$PROJECT_DIR$/dist/packages/zf-time/zf-time.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.vue" afterPath="$PROJECT_DIR$/src/index.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-item/zf-item.js" afterPath="$PROJECT_DIR$/dist/packages/zf-item/zf-item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/packages/zf-navigator/zf-navigator.js" afterPath="$PROJECT_DIR$/dist/packages/zf-navigator/zf-navigator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/examples/zf-navigator/index.vue" afterPath="$PROJECT_DIR$/src/examples/zf-navigator/index.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/packages/zf-item/zf-item.vue" afterPath="$PROJECT_DIR$/src/packages/zf-item/zf-item.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/packages/zf-navigator/zf-navigator.vue" afterPath="$PROJECT_DIR$/src/packages/zf-navigator/zf-navigator.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +33,8 @@
       <file leaf-file-name="zf-item.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/packages/zf-item/zf-item.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-379">
-              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="177" />
+            <state relative-caret-position="440">
+              <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -72,12 +70,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/examples/zf-navigator/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="36" column="42" lean-forward="false" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="494">
+              <caret line="103" column="5" lean-forward="false" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#text#0;n#div#0;n#zf-navigator#4;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#2;n#zf-navigator#4;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#1;n#div#2;n#zf-navigator#4;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,7 +97,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="165">
               <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -104,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zf-navigator.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zf-navigator.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/packages/zf-navigator/zf-navigator.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="74" column="55" lean-forward="false" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
+            <state relative-caret-position="353">
+              <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -117,7 +119,7 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
+            <state relative-caret-position="795">
               <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
               <folding />
             </state>
@@ -127,7 +129,7 @@
       <file leaf-file-name="zf-tag.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/packages/zf-tag/zf-tag.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
+            <state relative-caret-position="1230">
               <caret line="82" column="38" lean-forward="false" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="38" />
               <folding />
             </state>
@@ -201,15 +203,15 @@
         <option value="$PROJECT_DIR$/src/examples/zf-tag/index.js" />
         <option value="$PROJECT_DIR$/src/examples/zf-item/index.js" />
         <option value="$PROJECT_DIR$/src/examples/zf-tag/index.vue" />
-        <option value="$PROJECT_DIR$/src/packages/zf-item/zf-item.vue" />
         <option value="$PROJECT_DIR$/src/packages/zf-tag/zf-tag.vue" />
         <option value="$PROJECT_DIR$/src/examples/zf-item/index.vue" />
         <option value="$PROJECT_DIR$/src/packages/zf-navigator/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/index.vue" />
         <option value="$PROJECT_DIR$/src/examples/zf-navigator/index.js" />
-        <option value="$PROJECT_DIR$/src/examples/zf-navigator/index.vue" />
+        <option value="$PROJECT_DIR$/src/packages/zf-item/zf-item.vue" />
         <option value="$PROJECT_DIR$/src/packages/zf-navigator/zf-navigator.vue" />
+        <option value="$PROJECT_DIR$/src/examples/zf-navigator/index.vue" />
       </list>
     </option>
   </component>
@@ -248,7 +250,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,27 +272,14 @@
               <item name="zf_components" type="b2602c69:ProjectViewProjectNode" />
               <item name="zf_components" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="zf-navigator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zf_components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zf_components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zf_components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zf_components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="zf-navigator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,27 +315,28 @@
       <workItem from="1525741656285" duration="19215000" />
       <workItem from="1525827990841" duration="19362000" />
       <workItem from="1525868059605" duration="66000" />
-      <workItem from="1525915408473" duration="14903000" />
+      <workItem from="1525915408473" duration="15069000" />
+      <workItem from="1526001933142" duration="4550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59615000" />
+    <option name="totallyTimeSpent" value="64331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="25" width="1400" height="819" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -412,10 +401,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1525944223312" expanded="true" signature="36743:36752" ph="{...}" />
-            <marker date="1525944223312" expanded="true" signature="36743:36764" ph="[...]" />
-            <marker date="1525944223312" expanded="true" signature="36745:36750" ph="/*...*/" />
-            <marker date="1525944223312" expanded="true" signature="36754:36762" ph="/*...*/" />
+            <marker date="1526005223536" expanded="true" signature="36743:36752" ph="{...}" />
+            <marker date="1526005223536" expanded="true" signature="36743:36764" ph="[...]" />
+            <marker date="1526005223536" expanded="true" signature="36745:36750" ph="/*...*/" />
+            <marker date="1526005223536" expanded="true" signature="36754:36762" ph="/*...*/" />
           </folding>
         </state>
       </provider>
@@ -504,7 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -520,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -560,7 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,7 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -632,14 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="20" />
-          <folding>
-            <element signature="e#4170#4313#0" expanded="false" />
-            <element signature="e#4343#4484#0" expanded="false" />
-            <element signature="e#4368#4470#0" expanded="false" />
-            <element signature="e#4516#4661#0" expanded="false" />
-            <element signature="e#4692#4835#0" expanded="false" />
-            <element signature="e#4717#4821#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -659,25 +635,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/packages/zf-navigator.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/packages/zf-navigator.vue" />
     <entry file="file://$PROJECT_DIR$/src/packages/zf-mask/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="165">
           <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -687,7 +655,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
+        <state relative-caret-position="795">
           <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
           <folding />
         </state>
@@ -725,35 +693,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/packages/zf-item/zf-item.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-379">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="177" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/packages/zf-tag/zf-tag.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
+        <state relative-caret-position="1230">
           <caret line="82" column="38" lean-forward="false" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/examples/zf-navigator/index.vue">
+    <entry file="file://$PROJECT_DIR$/src/packages/zf-item/zf-item.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="36" column="42" lean-forward="false" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+        <state relative-caret-position="440">
+          <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/packages/zf-navigator/zf-navigator.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="74" column="55" lean-forward="false" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
+        <state relative-caret-position="353">
+          <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/zf-navigator/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="103" column="5" lean-forward="false" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#text#0;n#div#0;n#zf-navigator#4;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#2;n#zf-navigator#4;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#1;n#div#2;n#zf-navigator#4;n#scroller#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

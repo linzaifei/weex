@@ -8,7 +8,7 @@
         </div>
         <div class="center">
             <slot name="center">
-                <zf-tag :src="centerImg" space="15px" :iconWidth="leftImgWidth" :color="centerColor" :size="centerFont" :content="centerTitle" />
+                <zf-tag :src="centerImg" space="15px" :iconWidth="centerImgWidth" :color="centerColor" :size="centerFont" :content="centerTitle" />
             </slot>
         </div>
         <div class="right"  @click="rightButtonClicked">
@@ -23,7 +23,6 @@
 <script>
     const navigator = weex.requireModule('navigator');
     import ZfTag from '../zf-tag'
-
     const modal =weex.requireModule('modal');
 
     export default {
